@@ -1,0 +1,35 @@
+{   
+    "name": "xfactoryapp/fsphp",
+    "description": "Full Stack PHP Developer",
+    "minimum-stability": "stable",
+    "authors": [
+      {
+        "name": "Alison Souza",
+        "email": "alisonfco@hotmail.com",
+        "homepage": "https://xfactoryapp.com.br",
+        "role": "Developer"
+      }  
+    ],
+    "config": {
+      "vendor-lib": "vendor"
+    },
+    "autoload": {
+        "psr-4": {
+          "Source\\": "source/"     
+        }   
+    },
+    "files": [
+        "source/Boot/Config.php",
+        "source/Boot/Helpers.php",
+        "source/Boot/Minify/Web.php",
+        "source/Boot/Minify/App.php"
+    ],
+    "require": {
+        "phpmailer/phpmailer": "v6.1.5",
+        "league/plates": "v4.0.0-alpha",
+        "coffeecode/optimizer": "2.0.0",
+        "php": "* 7.4.5",
+        "ext-PDO": "* 7.4.5",
+        "coffeecode/router": "1.0.7"
+    }
+}
